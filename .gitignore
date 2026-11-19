@@ -1,0 +1,70 @@
+# ------------------------------------------------------------------------------ #
+# Java defaults (https://github.com/github/gitignore/blob/master/Java.gitignore) #
+# ------------------------------------------------------------------------------ #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# ------------------------------------------------------------------------------------------- #
+# Eclipse-specific (https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore) #
+# ------------------------------------------------------------------------------------------- #
+*.pydevproject
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.project
+.classpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# --------------- #
+# Studio-specific #
+# --------------- #
+target/
+.mule/
+.DS_Store
+velocity.log
+
+
+# ------------------------------------------------------------------------------ #
+# Security - Never commit credentials or private keys
+# ------------------------------------------------------------------------------ #
+.env
+.env.*
+!.env.example
+
+*.pem
+*.p8
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Local secrets and credentials
+secrets/
+credentials/
+# Local Mule configuration containing secrets
+/src/main/resources/myConfig-dev.yaml
+/src/main/resources/snowflake-secure.yaml
